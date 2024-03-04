@@ -31,3 +31,13 @@ const team = [
     },
 ];
 
+
+
+for (let i = 0; i < team.length; i++) {
+    const teamMember = team[i];
+    console.log(teamMember);
+    console.log(teamMember.name);
+    console.log(teamMember.role);
+    console.log(teamMember.image);    
+}
+
