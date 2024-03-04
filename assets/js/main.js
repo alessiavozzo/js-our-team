@@ -31,13 +31,28 @@ const team = [
     },
 ];
 
+const rowElement = document.querySelector(".row");
+
+
 
 
 for (let i = 0; i < team.length; i++) {
     const teamMember = team[i];
-    console.log(teamMember);
-    console.log(teamMember.name);
-    console.log(teamMember.role);
-    console.log(teamMember.image);    
+    //console.log(teamMember);
+    //console.log(teamMember.name);
+    //console.log(teamMember.role);
+    //console.log(teamMember.image);
+
+    let markup = `<div class="col">
+    <div class="card">
+        <img src="./assets/img/${teamMember.image}" alt="" class="card-img-top">
+    </div>
+    <div class="card-body">
+        <h3>${teamMember.name}</h3>
+        <p>${teamMember.role}</p>
+    </div>
+    </div>`;
+
+    rowElement.innerHTML += markup;
 }
 
